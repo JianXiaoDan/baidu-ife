@@ -1,0 +1,14 @@
+{
+  "name": "baidu-ife",
+  "description": "学起前端不要命小组百度ife学院任务",
+  "keywords": [
+    "baidu-ife"
+  ],
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-compass": "~1.0.4",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-uglify": "^1.0.1",
+    "grunt-contrib-watch": "~0.5.3"
+  }
+}
