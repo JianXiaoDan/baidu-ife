@@ -1,0 +1,101 @@
+@import "compass/reset";
+@import "compass/css3";
+@mixin animation_fun($name){
+  @keyframes #{$name}{
+    @content;
+  }
+  @-webkit-keyframes #{$name}{
+    @content;
+  }
+  @-moz-keyframes #{$name}{
+    @content;
+  }
+}
+@include animation_fun(moveToRight){
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+table{
+  line-height: 1.1;
+  border-spacing: 2px;
+  border-collapse: separate;
+  caption{
+    text-align: center;
+  }
+  thead{
+    background-color: #000;
+    color: #fff;
+  }
+  tbody{
+    tr:nth-child(even){
+      background-color: #999;
+    }
+    tr:nth-child(1),tr:nth-child(2),tr:nth-child(3){
+      color: red;
+    }
+  }
+}
+.wrapper{
+  width: 200px;
+  margin-top: 30px;
+  text-align: center;
+  input{
+    width: 120px;
+    @include transition(width .5s);
+    &:focus{
+      width: 180px;
+    }
+  }
+}
+section{
+  margin-top: 30px;
+  position: relative;
+  width: 200px;
+  height: 100px;
+  ul{
+    width: 300%;
+    height: 100%;
+    li{
+      width: 200px;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      &:target{
+        z-index: 2;
+        @include animation(moveToRight 1s linear);
+      }
+      &:nth-child(1){
+        background-color: red;
+      }
+      &:nth-child(2){
+        background-color: green;
+      }
+      &:nth-child(3){
+        background-color: blue;
+      }
+    }
+  }
+  .atag{
+    z-index: 3;
+    width: 68px;
+    text-align: justify;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    a{
+      text-decoration: none;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      text-align: center;
+      color:#fff;
+      background: rgba(255,255,255,0.8);
+    }
+  }
+}
