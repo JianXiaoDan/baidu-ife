@@ -1,0 +1,35 @@
+@import "compass/reset";
+section{
+  padding: 20px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content:space-between;
+  align-items:center;
+  div{
+    // margin:auto;
+    width: 150px;
+    background: #f00;
+    margin-bottom: 20px;
+    &.fir{
+      height: 120px;
+    }
+    &.sec{
+      height: 100px;
+    }
+    &.thi{
+      height: 40px;
+    }
+    &.for{
+      height: 200px;
+      background: #0f0;
+    }
+  }
+}
+@media (max-width:640px){
+  section {
+    align-items: flex-start;
+    div.for{
+      order: -1;
+    }
+  }
+}
