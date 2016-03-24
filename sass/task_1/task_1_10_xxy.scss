@@ -1,10 +1,16 @@
 @import "compass/reset";
 section{
+  height: 300px;
   padding: 20px;
   display: flex;
   flex-flow: row wrap;
   justify-content:space-between;
   align-items:center;
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+  -webkit-justify-content:space-between;
+  -webkit-align-items:center;
+  // align-content: space-around;
   div{
     // margin:auto;
     width: 150px;
@@ -27,9 +33,10 @@ section{
 }
 @media (max-width:640px){
   section {
-    align-items: flex-start;
+    -webkit-align-items: flex-start;
     div.for{
       order: -1;
+      -webkit-order: -1;
     }
   }
 }

@@ -65,43 +65,49 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 2, ../../sass/task_1/task_1_10_xxy.scss */
 section {
+  height: 300px;
   padding: 20px;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+  display: -webkit-flex;
+  -webkit-flex-flow: row wrap;
+  -webkit-justify-content: space-between;
+  -webkit-align-items: center;
 }
-/* line 8, ../../sass/task_1/task_1_10_xxy.scss */
+/* line 14, ../../sass/task_1/task_1_10_xxy.scss */
 section div {
   width: 150px;
   background: #f00;
   margin-bottom: 20px;
 }
-/* line 13, ../../sass/task_1/task_1_10_xxy.scss */
+/* line 19, ../../sass/task_1/task_1_10_xxy.scss */
 section div.fir {
   height: 120px;
 }
-/* line 16, ../../sass/task_1/task_1_10_xxy.scss */
+/* line 22, ../../sass/task_1/task_1_10_xxy.scss */
 section div.sec {
   height: 100px;
 }
-/* line 19, ../../sass/task_1/task_1_10_xxy.scss */
+/* line 25, ../../sass/task_1/task_1_10_xxy.scss */
 section div.thi {
   height: 40px;
 }
-/* line 22, ../../sass/task_1/task_1_10_xxy.scss */
+/* line 28, ../../sass/task_1/task_1_10_xxy.scss */
 section div.for {
   height: 200px;
   background: #0f0;
 }
 
 @media (max-width: 640px) {
-  /* line 29, ../../sass/task_1/task_1_10_xxy.scss */
+  /* line 35, ../../sass/task_1/task_1_10_xxy.scss */
   section {
-    align-items: flex-start;
+    -webkit-align-items: flex-start;
   }
-  /* line 31, ../../sass/task_1/task_1_10_xxy.scss */
+  /* line 37, ../../sass/task_1/task_1_10_xxy.scss */
   section div.for {
     order: -1;
+    -webkit-order: -1;
   }
 }
