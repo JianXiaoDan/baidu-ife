@@ -1,0 +1,45 @@
+body{
+  
+  font-family: "微软雅黑";
+  font-size: 15px;
+  background-color: black;
+  margin-top:0px;
+
+}
+div.top{
+   margin-top:0px; background-color: gray;color: white;margin-left: 50px;margin-right: 50px;height: 60px;
+}
+
+li.disp{
+	display: inline;
+}
+
+div.back{
+	background-color: silver;top: 60px;left: 58px;position: absolute;right: 58px;
+}
+div.one{
+	background-color: white;margin-top: 20px;margin-left: 20px;width: 800px;margin-bottom: 20px;position: relative; margin-right: 20px;padding: 20px;
+}
+div.right{
+	background-color: white;width: 300px;position: absolute;float: right; top:20px;left: 1000px;padding: 20px;
+}
+div.two{
+	 background-color: white;position: relative;margin-top: 20px;margin-left: 20px; margin-right: 540px; padding: 20px;
+}
+div.three{
+	background-color: white;position: relative;margin-top: 20px;margin-left: 20px; margin-right: 540px; padding: 20px;
+}
+div.img{
+	 position: relative;margin-top:30px;margin-left: 30px;border-width:1px;border-style: solid;border-color:#C0C0C0; text-align: center;display: inline-block;
+	 padding: 5px;
+}
+
+div.four{
+	background-color: white;position: relative;margin-top: 20px;margin-left: 20px; margin-right: 540px; padding: 20px;
+}
+p.cc{
+	color:#ccc
+}
+ h4{color: #ccc;}
+ h5{color: #ccc;}
+a:link {color:#FFFFFF;}

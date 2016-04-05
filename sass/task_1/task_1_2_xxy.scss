@@ -1,0 +1,48 @@
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #e3e3e3;
+}
+nav{
+	padding: 0 50px;
+	height: 60px;
+	line-height: 60px;
+	background: #333 url(../../img/bd_logo.png) no-repeat 50px 14px ;
+	background-size: 100px;
+  ul{
+    line-height: 60px;
+  	float: right;
+  	font-size: 0;
+    &::after{
+      overflow: hidden;
+    }
+    li{
+      display: inline-block;
+    	color: #fff;
+    	font-size: 12px;
+    	padding-left: 26px;
+    	position: relative;
+      a{
+        color: #fff;
+      	text-decoration: none;
+        &.active{
+          color: #999;
+        }
+      }
+      &::before{
+        content:'.';
+      	font-size: 50px;
+      	color: #000;
+      	position: absolute;
+      	left: 8px;
+      	top: -13px;
+      }
+    }
+  }
+}
+section{
+	margin: 20px;
+	padding: 20px;
+	background-color: #fff;
+	border-bottom: 2px solid #999;
+}

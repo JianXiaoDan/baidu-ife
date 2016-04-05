@@ -1,0 +1,19 @@
+@import "compass/reset";
+$gridColumns:      12 !default;
+$gridcolumnWidth:  60px !default;
+$gridGutter:       20px !default;
+
+@mixin gridNew($tag){
+  @for $i from 1 through $gridColumns {
+    .col-#{$tag}-#{$i}{
+      width: (100% / $gridColumns) * $i
+    }
+  }
+}
+
+@media (max-width:768px){
+  @include gridNew(ms)
+}
+@media (min-width:768px){
+  @include gridNew(md)
+}
